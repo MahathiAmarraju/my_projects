@@ -1,0 +1,91 @@
+.trending-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  
+  padding-bottom: 20px;
+}
+
+.section:last-child {
+  
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2e8eca;
+}
+
+.grid-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -ms-overflow-style: none; /* Hide scrollbar on Edge */
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.grid-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome, Safari, Opera */
+}
+
+.grid {
+  display: flex; /* Change display to flex */
+  gap: 20px; /* Adjust gap between items */
+  flex-wrap: nowrap; /* Prevent items from wrapping to next row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.item {
+  width: 320px;
+  height: 361.5px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item:hover {
+  background-color: #e8e8e8;
+}
+
+.screen-container {
+  width: calc(100% - 100px);
+  height: 100%;
+  background-color: rgb(36, 49, 75);
+  border-radius: 30px;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+    circle at center left,
+    transparent 0,
+    #233656 100px
+  ),
+  repeating-linear-gradient(#1e2a3e55, #1e2a3e);
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.flex {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -ms-overflow-style: none; /* Hide scrollbar on Edge */
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.flex::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome, Safari, Opera */
+}
+
+.item img{
+  max-width: 300px;
+  max-height: 300px;
+  object-position: 100%;
+  object-fit: fill !important;
+}

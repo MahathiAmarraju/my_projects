@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Bar */
+  .logo {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 5vw;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #4a5568; /* Adjust color as needed */
+    color: #2d3748; /* Adjust color as needed */
+  }
+  
+  .navigation-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation-links a {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: #cbd5e0; /* Adjust color as needed */
+    text-decoration: none;
+  }
+  
+  .navigation-links a:hover {
+    color: #000; /* Adjust color as needed */
+    background-color: #e2e8f0; /* Adjust color as needed */
+  }
+  
+  /* Main Content */
+  .main-content {
+    padding: 5rem 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .song-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .song-card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #4a5568; /* Adjust color as needed */
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .song-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .song-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .song-details {
+    padding: 1rem;
+  }
+  
+  .song-details h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* Adjust color as needed */
+    margin-bottom: 0.5rem;
+  }
+  
+  .song-details h4 {
+    font-size: 0.75rem;
+    color: #cbd5e0; /* Adjust color as needed */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Audio Player */
+  .audio-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .audio-player button {
+    font-size: 1.5rem;
+    background-color: #4a5568; /* Adjust color as needed */
+    color: #fff; /* Adjust color as needed */
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+  
+  .audio-player button:hover {
+    background-color: #2d3748; /* Adjust color as needed */
+  }
+  
+  .audio-player audio {
+    width: calc(100% - 6rem);
+  }
+  
